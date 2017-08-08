@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="wordList">
+<head>
+    <title>WORDS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="wordListController">
+      <button type = "submit" id="words" ng-click="addWord(wordsStorage)">Words</button>
+
+      <button type = "submit" id="wordsplus" ng-click="decorateWord(style)">Decorated Words</button>
+
+      <button type = "submit" id="phrases" ng-click="addPhrase(phrasesStorage)">Phrase</button>
+
+      <button type = "submit" id="phrasesplus">Phrases</button>
+
+      <ul>
+        <li ng-repeat="word in printed">{{word.word}}</li>
+      </ul>
+
+
+
+    <script src="lib/angular.min.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="controller.js"></script>
+
+</body>
+</html>
